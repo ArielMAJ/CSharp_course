@@ -1,5 +1,6 @@
 ﻿using System;
 using Aula_126.Entities;
+
 namespace Aula_126
 {
     class Program
