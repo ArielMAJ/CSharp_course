@@ -21,7 +21,7 @@ namespace Aula_137_Exercicio.Entities
                 Console.Write("Individual or company (i/c): ");
                 string individual_or_company = Console.ReadLine().ToLower();
                 Console.Write("Name: ");
-                string name = Console.ReadLine().ToLower();
+                string name = Console.ReadLine();
                 Console.Write("Anual Income: $");
                 double income = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
@@ -51,7 +51,7 @@ namespace Aula_137_Exercicio.Entities
             foreach (TaxPayer taxPayer in taxPayers)
             {
                 Console.WriteLine(
-                    $"Alex: " +
+                    $"{taxPayer.Name}: " +
                     $"$ {taxPayer.TaxesPaid().ToString("F2", CultureInfo.InvariantCulture)} "
                 );
                 total += taxPayer.TaxesPaid();
