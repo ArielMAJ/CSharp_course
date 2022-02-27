@@ -29,7 +29,7 @@ namespace Aula_146_Assignment.Entities
         {
             if (amount <= 0) { throw new DomainException("Invalid withdraw value."); }
             if (amount > WithdrawLimit) { throw new DomainException($"You can't withdraw more than ${WithdrawLimit} at a time."); }
-            if ((Balance - amount) < 0) { throw new DomainException("Not enough money in the account."); }
+            if (Balance < amount) { throw new DomainException("Not enough money in the account."); }
 
             Balance -= amount;
         }
