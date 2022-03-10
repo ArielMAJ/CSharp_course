@@ -1,4 +1,4 @@
-# Notes of file opening in VSComunnity
+# Notes on file opening in VSComunnity
 
 An "easy" way (i found) to write relative paths that are actually root paths:
 
